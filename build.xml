@@ -55,9 +55,9 @@
             
              <classpath refid="compile.path"/>        
             
-            <batchtest fork="yes" todir="${report.path}" haltonfailure="no">
-                <fileset dir="${build.path}">
-                    <include name="**/*Test.class"/>
+            <batchtest fork="on" todir="${report.path}" haltonfailure="no">
+                <fileset dir="${test.path}">
+                    <include name="**/*show.java"/>
                 </fileset>
             </batchtest>                 
          </junit>
